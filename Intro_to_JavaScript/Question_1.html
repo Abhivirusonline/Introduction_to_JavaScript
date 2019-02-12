@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INTRODUCTION TO JAVASCRIPT</title>
+	<style type="text/css">
+		* {
+			  box-sizing: border-box;
+			}
+
+		input[type=text], select, textarea {
+		  width: 20%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  resize: vertical;
+		}
+		button{
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  float: left;
+		}
+		.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+	</style>
+	<script type="text/javascript">
+		function first() {
+		var amount=prompt("Enter amount : ");
+		var rate=prompt("Enter rate of Intrest :");
+		var no_of_years=prompt("Enter no of Years : ");
+		alert("Simple Intrest is :"+(amount*rate*no_of_years)/100);
+		print();
+		}
+		function calculate() {
+			
+		}
+		function print(){
+		document.getElementById('disp').innerHTML=(amount*rate*no_of_years)/100;	
+		}
+		
+	</script>
+</head>
+<body onload="first()">
+<div>
+	Your Simple Intrest is : <span id="disp"></span>
+	<div class="container">
+		<div>
+			<input type="text" id="p" placeholder="Enter amount">
+		</div>	
+		<div>
+			<input type="text" id="p" placeholder="Enter Rate">
+		</div>
+		<div>
+			<input type="text" id="p" placeholder="Enter Time">
+		</div>
+		<button onclick="calculate()">Calculate</button>
+	</div>
+</div>
+</body>
+</html>

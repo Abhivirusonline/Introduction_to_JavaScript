@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INTRODUCTION TO JAVASCRIPT</title>
+	<script type="text/javascript">
+	var str=prompt("Enter the String :");
+	var len=str.length;
+	var lh=len/2;
+	var j=len-1;
+	var f=1;
+	window.onload=function() {
+	for(var i=0;i<lh;i++)
+	{
+		if(str.charAt(i)!=str.charAt(j))
+		{
+			alert(str+" is not pollindrom");
+			f=0;
+			document.getElementById('pollindrom').innerHTML= str+" is not a pollindrom";
+			break;
+		}
+		j--;
+	}
+	if(f==1)
+	{	
+	 alert(str+" is pollindrom");	
+	 document.getElementById('pollindrom').innerHTML= str+" is a pollindrom";
+	}
+   }
+	</script>
+</head>
+<body>
+<div id="pollindrom">
+	
+</div>
+</body>
+</html>

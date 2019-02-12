@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to JavaScript</title>
+	<style type="text/css">
+		li{
+			cursor: pointer;
+			text-decoration: underline;
+			color: blue;
+		}
+		tr:nth-child(even){
+			background-color: #f2f2f2;
+			color: #000;
+		}
+		tr:hover 
+		{
+			background-color: #f5f5f5;
+		}
+		td,th{
+			padding: 15px;
+			text-align: center;
+		}
+		table{
+			border-collapse: collapse;
+  			width: 50%;
+		}
+		th{
+			color: #fff;
+			background-color: #2866c9;
+		}
+	</style>	
+</head>
+<body>
+<h2>create a list of objects of Employee with info as follow :</h2>
+<ol type="a">
+	<li onclick="a()">Name, age, salary ,DOB</li>
+	<span id="disp">
+		
+	</span>
+	<li 	onclick="b()"> filter all employees with salary greater than 5000 </li>
+	<span id="b"></span>
+	<li onclick="c()"> group employee on the basis of their age </li>
+	<div style="overflow-x: auto;">
+		<span id="c">			
+		</span>
+	</div>
+	<li onclick="d()"> fetch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary.</li>
+	<div>
+		<span id="d"></span>
+	</div>
+
+</ol>
+<script type="text/javascript" src="./q5.js"></script>
+</body>
+</html>
